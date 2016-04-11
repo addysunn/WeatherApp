@@ -1,1 +1,2 @@
-# Weather app using Bluemix
+# Project Description
+  We have created an application which is useful to see weather insights of different cities around the world by using IBM Blumix          Boilerplate and Services.It provides weather insights of 10 days.User can change option to see temperature in celsius  or fahrenheit.In   addition to temperature. Application provides insights for humidity,uv index,wind speed,time for sunrise-sunset-moonrise-moonset also.
