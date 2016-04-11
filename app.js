@@ -8,10 +8,11 @@
  // get the app environment from Cloud Foundry
  var appEnv = cfenv.getAppEnv();
  var weather_host = appEnv.services["weatherinsights"]
-         ? appEnv.services["weatherinsights"][0].credentials.url // Insights for Weather credentials passed in
-         : ""; // or copy your credentials url here for standalone
- //var weather_host = "https://ce024187-1870-469d-83ce-08f1ef9cb113:plTEkez0Rl@twcservice.mybluemix.net";
-
+        // Insights for Weather credentials passed in
+        ? appEnv.services["weatherinsights"][0].credentials.url 
+        // or copy your credentials url here for standalone
+        : ""; 
+ 
  function weatherAPI(path, qs, done) {
      var url = weather_host + path;
      console.log(url, qs);

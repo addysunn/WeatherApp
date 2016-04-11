@@ -6,16 +6,21 @@ function countryUpdate(country){
 	$('.wor').hide();
 	if(country == 'ind'){
 		$('.ind').show();
+		$('.ind')[0].selectedIndex = 0;
 	}
 	if(country == 'wor'){
 		$('.wor').show();
+		$('.wor')[0].selectedIndex = 0;
 	}
 	if(country == 'us'){
 		$('.usa').show();
+		$('.usa')[0].selectedIndex = 0;
 	}
 	if(country == 'aus'){
 		$('.aus').show();
+		$('.aus')[0].selectedIndex = 0;
 	}
+	init();
 }
 function getIconURL(code) {
 	return "images/weathericons/icon" + code + ".png";
